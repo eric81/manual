@@ -31,7 +31,7 @@
 1. [启停](Nginx start and stop)
 
 ## Servers
-[weblogic 关闭证书验证](weblogic  close Hostname Verification)
+1. [weblogic 关闭证书验证](weblogic  close Hostname Verification)
 
 ## Team
 1. [常用Git命令](Usefull Git)
