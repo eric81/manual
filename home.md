@@ -3,7 +3,7 @@
 ## Linux
 1. 端口占用 `lsof -i:80`  `kill -9 110`
 1. [启停weblogic](Start and stop weblogic in linux) `nohup ./startWebLogic.sh &`
-1. [Shell](shell)
+1. [Shell](shell.md)
 1. [mysql](mysql)
 
 ## Windows
