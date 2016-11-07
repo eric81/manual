@@ -2,4 +2,4 @@
 
 summary in software develop
 
-[Shell](home.md)
+[detail](home.md)
