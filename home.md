@@ -4,7 +4,7 @@
 1. 端口占用 `lsof -i:80`  `kill -9 110`
 1. [启停weblogic](startWeblogicLinux.md) `nohup ./startWebLogic.sh &`
 1. [Shell](shell.md)
-1. [mysql](mysql)
+1. [mysql](mysqlLinux.md)
 
 ## Windows
 1. 端口占用 `netstat -ano |findstr 80` `taskkill /f /pid 110`
