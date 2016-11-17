@@ -4,7 +4,7 @@
 
 1. 检查mysql状态：`service mysql status`     
 ![img](http://img1.ph.126.net/PKzZqWVnA5gY8zIJOEUmSA==/6631657103933402710.png)
-1. 停止mysql：`service mysq stop`
+1. 停止mysql：`service mysql stop`
 
 1. 查看已安装的mysql包：`rpm -qa | grep -i mysql`
 ![img](http://img2.ph.126.net/qmDlFlR4TZpJ0sip_IbkYA==/6631775851189201922.png)
