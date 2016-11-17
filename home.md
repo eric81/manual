@@ -8,7 +8,7 @@
 
 ## Windows
 1. 端口占用 `netstat -ano |findstr 80` `taskkill /f /pid 110`
-1. [Tomcat](Tomcat)
+1. [Tomcat](tomcatWindows.md)
 
 ## Java
 1. [Hessian](Hessian)
