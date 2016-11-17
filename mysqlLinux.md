@@ -2,7 +2,7 @@
 
 ## 卸载
 
-1. 检查mysql状态：`service mysql status`
+1. 检查mysql状态：`service mysql status`     
 ![img](http://img1.ph.126.net/PKzZqWVnA5gY8zIJOEUmSA==/6631657103933402710.png)
 1. 停止mysql：`service mysq stop`
 
