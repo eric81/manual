@@ -11,7 +11,6 @@
 1. 查看后台进程 ：`ps -ef|grep weblogic`
 
 1. 得到如下内容
-
     `weblogic 22621 22559  0 10:57        00:01:38 /data/weblogic/jdk1.6.0_25/bin/java`
 
-1. 杀后台进程 ：# kill -9 22621
+1. 杀后台进程 ：`kill -9 22621`
