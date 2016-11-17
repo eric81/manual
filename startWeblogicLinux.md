@@ -1,10 +1,10 @@
 # linux下关闭启动weblogic
 ## 启动weblogic：
-1. 进入目录：/weblogic/wlserver/user_projects/domains/base_domain/bin
+1. 进入目录：`cd /weblogic/wlserver/user_projects/domains/base_domain/bin`
 
-1. 执行nohup ./startWebLogic.sh &（nohup的作用是让weblogic启动在后台运行）
+1. 执行 `nohup ./startWebLogic.sh &`（nohup的作用是让weblogic启动在后台运行）
 
-1. 查看启动日志：tail -f nohup.out
+1. 查看启动日志：`tail -f nohup.out`
 
 ## 停止weblocgic：
 
