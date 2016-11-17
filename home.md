@@ -2,13 +2,10 @@
 
 ## Linux
 1. 端口占用 `lsof -i:80`  `kill -9 110`
-1. [启停weblogic](startWeblogicLinux.md) `nohup ./startWebLogic.sh &`
 1. [Shell](shell.md)
-1. [mysql](mysqlLinux.md)
 
 ## Windows
 1. 端口占用 `netstat -ano |findstr 80` `taskkill /f /pid 110`
-1. [Tomcat](tomcatWindows.md)
 
 ## Java
 1. [Hessian](hessian.md)
@@ -26,12 +23,15 @@
 
 ## DataBase
 1. [Usefull SQL](Usefull SQL)
+1. [mysql](mysql.md)
+
+## WebContainner
+1. [Tomcat](tomcat.md)
+1. [启停weblogic](startWeblogicLinux.md) `nohup ./startWebLogic.sh &`
+1. [weblogic 关闭证书验证](weblogic  close Hostname Verification)
 
 ## Nginx
 1. [启停](Nginx start and stop)
-
-## Servers
-1. [weblogic 关闭证书验证](weblogic  close Hostname Verification)
 
 ## Team
 1. [常用Git命令](Usefull Git)
