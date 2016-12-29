@@ -20,8 +20,8 @@ $("#select").val();    //选中值
 ```
 
 #### 获取checkbox选中项
-##### 普通js方式
 ```javascript
+//普通js方式
 function getOptionArrays(optionName){
 	var checkedOptions = [];
     var r = document.getElementsByName(optionName);  
