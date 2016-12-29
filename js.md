@@ -30,8 +30,18 @@ function getOptionArrays(optionName){
     		checkedOptions.push(r[i]);
     	}
     }
-    
     return checkedOptions;
+}
+```
+
+```javascript
+//jquery方式
+function getOptionArrays(optionName){
+    var selected= [];
+    $('input[name="' + optionName　+ '"]:checked').each(function() {
+        selected.push($(this).val());
+    });
+    return selected;
 }
 ```
 
