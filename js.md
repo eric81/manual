@@ -3,20 +3,36 @@
 <a href="javascript:document:formName.submit();">确定</a>
 ```
 
+#### a标签调用JS
+```html
+<a href="javascript:void(0);" onClick="sendsvr();">
+```
+
 #### 按钮调用JS
 ```html
 <input type="button" value="button" onClick="javascript:window.location.href='' " >
-```
-
-#### 点击超链接调用JS
-```html
-<a href="javascript:void(0);" onClick="sendsvr();">
 ```
 
 #### jquery获取下拉框选中
 ```javascript
 $("#select  option:selected").text();   //选中的文本
 $("#select").val();    //选中值
+```
+
+#### 获取checkbox选中项
+##### 普通js方式
+```javascript
+function getOptionArrays(optionName){
+	var checkedOptions = [];
+    var r = document.getElementsByName(optionName);  
+    for(var i=0; i<r.length; i++){
+    	if(r[i].checked){
+    		checkedOptions.push(r[i]);
+    	}
+    }
+    
+    return checkedOptions;
+}
 ```
 
 #### 父窗口刷新子窗口内容
