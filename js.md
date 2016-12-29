@@ -60,6 +60,14 @@ function formatTime(obj) {
 }
 ```
 
+#### 刷新当前页及跳转
+```javascript
+//刷新当前页
+location.reload();
+//页面跳转
+location.href="http://www.news.cn/
+```
+
 #### 父窗口刷新子窗口内容
 ```javascript
 document.getElementById("ff").contentWindow.location.href = "index.html"
