@@ -65,7 +65,7 @@ function formatTime(obj) {
 //刷新当前页
 location.reload();
 //页面跳转
-location.href="http://www.news.cn/
+location.href="http://www.news.cn/";
 ```
 
 #### 父窗口刷新子窗口内容
