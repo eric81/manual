@@ -15,7 +15,7 @@
 
 #### jquery获取下拉框选中
 ```javascript
-$("#select  option:selected").text();   //选中的文本
+$("#select option:selected").text();   //选中的文本
 $("#select").val();    //选中值
 ```
 
