@@ -45,6 +45,21 @@ function getOptionArrays(optionName){
 }
 ```
 
+#### 时间格式化
+```javascript
+function formatTime(obj) {
+    var myDate = new Date(obj);
+    var year = myDate.getFullYear();
+    var month = ("0" + (myDate.getMonth() + 1)).slice(-2);
+    var day = ("0" + myDate.getDate()).slice(-2);
+    var h = ("0" + myDate.getHours()).slice(-2);
+    var m = ("0" + myDate.getMinutes()).slice(-2);
+    var s = ("0" + myDate.getSeconds()).slice(-2);
+    var mi = ("00" + myDate.getMilliseconds()).slice(-3);
+    return year + "-" + month + "-" + day + " " + h + ":" + m;
+}
+```
+
 #### 父窗口刷新子窗口内容
 ```javascript
 document.getElementById("ff").contentWindow.location.href = "index.html"
