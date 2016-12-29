@@ -38,7 +38,7 @@ function getOptionArrays(optionName){
 //jquery方式
 function getOptionArrays(optionName){
     var selected= [];
-    $('input[name="' + optionName　+ '"]:checked').each(function() {
+    $('input[name="' + optionName + '"]:checked').each(function() {
         selected.push($(this).val());
     });
     return selected;
