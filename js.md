@@ -14,6 +14,10 @@ $("#select").val();    //选中值
 
 * 父窗口刷新子窗口内容
 
-`document.getElementById("ff").contentWindow.location.href = "index.html"`
+```javascript
+document.getElementById("ff").contentWindow.location.href = "index.html"
+```
 或
-`document.getElementById("ff").src="index.html"`
+```javascript
+document.getElementById("ff").src="index.html"
+```
