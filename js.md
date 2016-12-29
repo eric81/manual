@@ -5,8 +5,14 @@
 
 #### 按钮调用JS
 ```html
-<input type="button" value="button onClick="javascript:window.location.href='' " >
+<input type="button" value="button" onClick="javascript:window.location.href='' " >
 ```
+
+#### 点击超链接调用JS
+```html
+<a href="javascript:void(0);" onClick="sendsvr();">
+```
+
 #### jquery获取下拉框选中
 ```javascript
 $("#select  option:selected").text();   //选中的文本
