@@ -83,7 +83,6 @@ function threadShow(page){
 				+ "</h3><p>" + reply.content + "</p></li>";
             $("#replys").append(contentHtml);
         });
-        
         showPager("pager", page, pageCount);
     });
 }
