@@ -62,7 +62,8 @@ function showNumPager(pagerID, page, pageCount) {
 	var i = start;
 	for(i = start; i < end; i++){
 		if(i == page){
-			$("#" + pagerID).append("<a class='currentPage' href='javascript:void(0)' target='_self' data-id='" + i + "'>" + i + "</a> &nbsp;");
+			$("#" + pagerID).append("<a class='currentPage' href='javascript:void(0)'
+			 target='_self' data-id='" + i + "'>" + i + "</a> &nbsp;");
 		}else{
 			$("#" + pagerID).append("<a href='javascript:void(0)' target='_self' data-id='" + i + "'>" + i + "</a> &nbsp;");
 		}
