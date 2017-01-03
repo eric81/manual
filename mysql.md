@@ -1,5 +1,3 @@
-# linux mysql卸载、安装(rpm 方式) 
-
 ## 卸载
 
 1. 检查mysql状态：`service mysql status`     
