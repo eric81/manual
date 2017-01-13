@@ -55,7 +55,6 @@ local function getTommorowStartTime()
 	SS = 0
 
 	local tmt = os.time{year=Y, month=M, day=D, hour=HH, min=MM, sec=SS}
-	
 	return tmt
 end
 ```
