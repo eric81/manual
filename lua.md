@@ -1,6 +1,6 @@
 #### 字符串分割
 ```lua
--- string split
+-- string split, return table data
 function split(str, delimiter)
 	if str==nil or str=='' or delimiter==nil then
 		return nil
