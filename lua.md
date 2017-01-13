@@ -32,57 +32,9 @@ ngx.say("remoteIp="..remoteIp);
 
 ### 时间处理
 ```lua
-os.time()                                  --当前时间(int)
-os.date("%Y-%m-%d %H:%M:%S", os.time())    --当前时间(String)
-```
-```lua
-local function getNewDate(srcDateTime,interval ,dateUnit)  
-    --从日期字符串中截取出年月日时分秒  
-    local Y = string.sub(srcDateTime,1,4)  
-    local M = string.sub(srcDateTime,5,6)  
-    local D = string.sub(srcDateTime,7,8)  
-    local H = string.sub(srcDateTime,9,10)  
-    local MM = string.sub(srcDateTime,11,12)  
-    local SS = string.sub(srcDateTime,13,14)
-    
-    --把日期时间字符串转换成对应的日期时间  
-    local dt1 = os.time{year=Y, month=M, day=D, hour=H,min=MM,sec=SS}  
-  
-    --根据时间单位和偏移量得到具体的偏移数据  
-    local ofset=0  
-  
-    if dateUnit =='DAY' then  
-        ofset = 60 *60 * 24 * interval  
-  
-    elseif dateUnit == 'HOUR' then  
-        ofset = 60 *60 * interval  
-          
- elseif dateUnit == 'MINUTE' then  
-        ofset = 60 * interval  
-  
-    elseif dateUnit == 'SECOND' then  
-        ofset = interval  
-    end  
-  
-    --指定的时间+时间偏移量  
-    local newTime = os.date("*t", dt1 + tonumber(ofset))  
-    return newTime  
-end
-
-function test()  
-    local oldTime="20130908232828"  
-        --把指定的时间加3小时  
-    local newTime=getNewDate(oldTime,3,'HOUR')  
-    local t1 = string.format('%d-%02d-%02d %02d:%02d:%02d',newTime.year,newTime.month,newTime.day,newTime.hour,newTime.min,newTime.sec)  
-    ngx.say('t1='..t1)  
-  
-        --把指定的时间加1天  
-    local newTime=getNewDate(oldTime,1,'DAY')  
-  
-    local t2 = string.format('%d%02d%02d%02d%02d%02d',newTime.year,newTime.month,newTime.day,newTime.hour,newTime.min,newTime.sec)  
-  
-    ngx.say('t2='..t2)  
-end
+os.time()                                                     --当前时间(int)
+os.date("%Y-%m-%d %H:%M:%S", os.time())                       --当前时间(String)
+os.time{year=2017, month=02, day=16, hour=09, min=09, sec=33} --String型时间转化成int型时间
 ```
 
 ```lua
