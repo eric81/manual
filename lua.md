@@ -29,3 +29,9 @@ else
 end
 ngx.say("remoteIp="..remoteIp);
 ```
+
+### 时间处理
+```lua
+os.time()                                  --当前时间(int)
+os.date("%Y-%m-%d %H:%M:%S", os.time())    --当前时间(String)
+```
