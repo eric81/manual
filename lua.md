@@ -32,14 +32,13 @@ ngx.say("remoteIp="..remoteIp);
 
 ### 时间处理
 ```lua
-os.time()                                                     --当前时间(int)
-os.date("%Y-%m-%d %H:%M:%S", os.time())                       --当前时间(String)
-os.time{year=2017, month=02, day=16, hour=09, min=09, sec=33} --String型时间转化成int型时间
+os.time()                                                      --当前时间(int)
+os.date("%Y-%m-%d %H:%M:%S", os.time())                        --当前时间(String)
+os.time{year=2017, month=02, day=16, hour=09, min=09, sec=33}  --String型时间转化成int型时间
 ```
 
 ```lua
--- 获取第二天开始时间(0时0分0秒)
-local function getTommorowStartTime()
+local function getTommorowStartTime()                          -- 获取第二天开始时间(0时0分0秒)
 	local tnow = os.date("%Y%m%d%H%M%S", os.time())
 	
 	local Y = string.sub(tnow,1,4)
