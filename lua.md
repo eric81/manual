@@ -58,3 +58,18 @@ local function getTommorowStartTime()
 	return tmt
 end
 ```
+
+#### 返回jason数据
+```lua
+local function convert2Result(code, msg, data, callback)
+	local result = {}
+	result["code"] = code
+	result["msg"] = msg
+	result["content"] = data
+	if callback ~= nil and callback ~= "" then
+		return callback .. "(" .. cjson.encode(result) .. ")";
+	else
+		return cjson.encode(result)
+	end
+end
+```
