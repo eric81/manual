@@ -80,13 +80,13 @@ document.getElementById("ff").src="index.html"
 ```
 
 #### jquery ajax
-POST
+#####POST
 ```javascript
 	var urls = "http://localhost:9090/api/user/add";
 	var datas = {name:'vvv', roles:'中国'};
 	$.post(urls, datas, function(data){alert(JSON.stringify(data));}, "jsonp");
 ```
-GET
+#####GET
 ```javascript
 	var url = "http://localhost:9090/api/user/list";
 	$.get(url, function(data){alert(JSON.stringify(data));}, "jsonp");
