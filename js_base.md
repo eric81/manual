@@ -67,11 +67,11 @@ location.reload();
 //页面跳转 当前页打开
 location.href="http://www.news.cn/";
 //页面跳转 新页面打开
-window.open("http://www.news.cn")```
+window.open("http://www.news.cn");
 //父窗口刷新子窗口(方式一)
-document.getElementById("ff").contentWindow.location.href = "index.html"
+document.getElementById("ff").contentWindow.location.href = "index.html";
 //父窗口刷新子窗口(方式二)
-document.getElementById("ff").src="index.html"
+document.getElementById("ff").src="index.html";
 ```
 
 #### jquery ajax
