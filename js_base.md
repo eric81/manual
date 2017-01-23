@@ -84,7 +84,7 @@ document.getElementById("ff").src="index.html"
 ```javascript
 var urls = "http://localhost:9090/api/user/add";
 var datas = {name:'vvv', roles:'中国'};
-$.post(urls, datas, function(data){alert(JSON.stringify(data));}, "jsonp");
+$.post(urls, datas, function(data){alert(JSON.stringify(data));}, "jsonp"); 
 ```
 #####GET
 ```javascript
@@ -94,16 +94,16 @@ $.get(url, function(data){alert(JSON.stringify(data));}, "jsonp");
 
 #### 电话号码校验
 ```javascript
-	var tel = $("#tel").val();
-	tel = $.trim(tel);
-	if (tel == null || tel == '') {
-		alert("请填写电话!");
-		return;
-	}
-	if(!(/^1[3|4|5|7|8]\d{9}$/.test(tel))){
-		alert("电话号码输入有误！");
-		return;
-	}
+var tel = $("#tel").val();
+tel = $.trim(tel);
+if (tel == null || tel == '') {
+	alert("请填写电话!");
+	return;
+}
+if(!(/^1[3|4|5|7|8]\d{9}$/.test(tel))){
+	alert("电话号码输入有误！");
+	return;
+}
 ```
 
 #### 随机数
