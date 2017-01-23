@@ -1,15 +1,14 @@
-#### a标签提交form表单
+#### a标签
 ```html
+//a标签提交form表单
 <a href="javascript:document:formName.submit();">确定</a>
-```
-
-#### a标签调用JS
-```html
+//a标签调用JS
 <a href="javascript:void(0);" onClick="sendsvr();">
 ```
 
-#### 按钮调用JS
+#### 按钮
 ```html
+//按钮调用JS
 <input type="button" value="button" onClick="javascript:window.location.href='' " >
 ```
 
@@ -61,22 +60,17 @@ function formatTime(obj) {
 }
 ```
 
-#### 刷新当前页及跳转
+#### 刷新及跳转
 ```javascript
 //刷新当前页
 location.reload();
 //页面跳转 当前页打开
 location.href="http://www.news.cn/";
 //页面跳转 新页面打开
-window.open("http://www.news.cn");
-```
-
-#### 父窗口刷新子窗口内容
-```javascript
+window.open("http://www.news.cn")```
+//父窗口刷新子窗口(方式一)
 document.getElementById("ff").contentWindow.location.href = "index.html"
-```
-或
-```javascript
+//父窗口刷新子窗口(方式二)
 document.getElementById("ff").src="index.html"
 ```
 
