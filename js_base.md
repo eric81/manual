@@ -105,3 +105,10 @@ document.getElementById("ff").src="index.html"
 		return;
 	}
 ```
+
+#### 随机数
+```javascript
+//抽奖
+var arr =["一","二","三","四","五","六","七","八","九","十",]
+console.log(arr[Math.floor(Math.random()*10)])
+```
