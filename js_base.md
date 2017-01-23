@@ -13,13 +13,14 @@
 <input type="button" value="button" onClick="javascript:window.location.href='' " >
 ```
 
-#### jquery获取下拉框选中
+#### 下拉框选中项
 ```javascript
+//jquery方式
 $("#select option:selected").text();   //选中的文本
 $("#select").val();    //选中值
 ```
 
-#### 获取checkbox选中项
+#### checkbox选中项
 ```javascript
 //普通js方式
 function getOptionArrays(optionName){
