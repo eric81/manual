@@ -79,7 +79,7 @@ document.getElementById("ff").src="index.html";
 //post
 var urls = "http://localhost:9090/api/user/add";
 var datas = {name:'vvv', roles:'中国'};
-$.post(urls, datas, function(data){alert(JSON.stringify(data));}, "jsonp"); 
+$.post(urls, datas, function(data, textStatus, jqXHR){alert(JSON.stringify(data));alert(textStatus);alert(jqXHR.getResponseHeader("Date"));},"jsonp"); 
 
 //get
 var url = "http://localhost:9090/api/user/list";
